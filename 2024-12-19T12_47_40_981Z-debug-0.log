@@ -1,0 +1,32 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.12.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\Cloud\Desktop\my-node-project\.npmrc
+5 silly config load:file:C:\Users\Cloud\.npmrc
+6 silly config load:file:C:\Users\Cloud\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm test
+8 verbose argv "test"
+9 verbose logfile logs-max:10 dir:C:\Users\Cloud\AppData\Local\npm-cache\_logs\2024-12-19T12_47_40_981Z-
+10 verbose logfile C:\Users\Cloud\AppData\Local\npm-cache\_logs\2024-12-19T12_47_40_981Z-debug-0.log
+11 silly logfile done cleaning log files
+12 verbose stack JSONParseError: Invalid package.json: JSONParseError: Unexpected non-whitespace character after JSON at position 293 (line 19 column 1) while parsing near "...st\": \"^3.3.0\"\n  }\n}\n\"scripts\": {\n  \"test..."
+12 verbose stack     at parse (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\read-package.js:19:21)
+12 verbose stack     at PackageJson.fromJSON (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\index.js:161:22)
+12 verbose stack     at PackageJson.load (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\index.js:156:17)
+12 verbose stack     at async PackageJson.normalize (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\package-json\lib\index.js:116:5)
+12 verbose stack     at async #run (C:\Program Files\nodejs\node_modules\npm\lib\commands\run-script.js:86:13)
+12 verbose stack     at async RunScript.exec (C:\Program Files\nodejs\node_modules\npm\lib\commands\run-script.js:40:7)
+12 verbose stack     at async Npm.exec (C:\Program Files\nodejs\node_modules\npm\lib\npm.js:207:9)
+12 verbose stack     at async module.exports (C:\Program Files\nodejs\node_modules\npm\lib\cli\entry.js:74:5)
+13 error code EJSONPARSE
+14 error JSON.parse Invalid package.json: JSONParseError: Unexpected non-whitespace character after JSON at position 293 (line 19 column 1) while parsing near "...st\": \"^3.3.0\"\n  }\n}\n\"scripts\": {\n  \"test..."
+15 error JSON.parse Failed to parse JSON data.
+15 error JSON.parse Note: package.json must be actual JSON, not just JavaScript.
+16 verbose cwd C:\Users\Cloud\Desktop\my-node-project
+17 verbose os Windows_NT 10.0.19045
+18 verbose node v22.12.0
+19 verbose npm  v10.9.0
+20 verbose exit 1
+21 verbose code 1
+22 error A complete log of this run can be found in: C:\Users\Cloud\AppData\Local\npm-cache\_logs\2024-12-19T12_47_40_981Z-debug-0.log
