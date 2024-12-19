@@ -1,12 +1,18 @@
-FROM node:latest
+# Use an official Node.js runtime as a parent image
+FROM node:16
 
+# Set the working directory in the container
 WORKDIR /usr/src/app
 
-COPY package.json ./
-
+# Copy package.json and install dependencies
+COPY package*.json ./
 RUN npm install
 
+# Copy the rest of the application files
 COPY . .
 
-EXPOSE 4000
-CMD [ "node", "index.js" ]
+# Expose the application port
+EXPOSE 8080
+
+# Run the application
+CMD ["npm", "start"]
